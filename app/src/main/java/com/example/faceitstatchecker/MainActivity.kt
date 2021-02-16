@@ -2,6 +2,7 @@ package com.example.faceitstatchecker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.faceitstatchecker.ui.UserSearch.UserSearchFragment
 import com.example.faceitstatchecker.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
@@ -9,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.main_activity)
 		if(savedInstanceState == null) {
-			supportFragmentManager.beginTransaction().replace(R.id.container, MainFragment.newInstance()).commitNow()
+			supportFragmentManager.beginTransaction().replace(R.id.container, UserSearchFragment.newInstance()).commitNow()
 		}
 	}
 }

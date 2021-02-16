@@ -14,8 +14,11 @@ import retrofit2.Response
  */
 class UserRepository : IUserRepository {
     private val TAG = "UserRepository"
+    var lastCall: Call<PlayerSearchResponse>? = null
     override fun searchUsersViaCallback(queryString: String, callback: IUserRepository.callback) {
-        FSCRetrofit.retrofitInstance.create(FaceitDataInterface::class.java).playerSearch(queryString).enqueue(
+        lastCall?.cancel()
+       lastCall = FSCRetrofit.retrofitInstance.create(FaceitDataInterface::class.java).playerSearch(queryString)
+        lastCall?.enqueue(
             object : Callback<PlayerSearchResponse> {
                 override fun onResponse(
                     call: Call<PlayerSearchResponse>,
