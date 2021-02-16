@@ -1,4 +1,4 @@
-package com.example.faceitstatchecker.responses
+package com.example.faceitstatchecker.responses.internal
 
 
 import com.google.gson.annotations.SerializedName
