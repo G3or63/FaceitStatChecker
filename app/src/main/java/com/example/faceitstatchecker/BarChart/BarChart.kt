@@ -15,7 +15,7 @@ import kotlin.math.floor
 /**
  * Created by George Hart on 13/02/2021;
  */
-class BarChart<T> @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0): Chart<T>(context, attributeSet, defStyleAttr) {
+class BarChart @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0): Chart(context, attributeSet, defStyleAttr) {
     private val barCalculator = BarCalculator()
     private val rect = RectF()
     private val painter = Paint()
