@@ -1,10 +1,10 @@
-package com.example.faceitstatchecker.ui.main.repositories
+package com.example.faceitstatchecker.Network.repositories
 
 import android.util.Log
 import com.example.faceitstatchecker.Network.FSCRetrofit
 import com.example.faceitstatchecker.Network.FaceitDataInterface
 import com.example.faceitstatchecker.responses.PlayerSearchResponse
-import com.example.faceitstatchecker.ui.main.repositories.repository_interfaces.IUserRepository
+import com.example.faceitstatchecker.Network.repositories.repository_interfaces.IUserRepository
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

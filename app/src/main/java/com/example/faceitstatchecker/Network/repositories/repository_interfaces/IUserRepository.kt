@@ -1,4 +1,4 @@
-package com.example.faceitstatchecker.ui.main.repositories.repository_interfaces
+package com.example.faceitstatchecker.Network.repositories.repository_interfaces
 
 import com.example.faceitstatchecker.responses.PlayerSearchResponse
 

@@ -4,8 +4,8 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.faceitstatchecker.Network.FSCRetrofit
 import com.example.faceitstatchecker.responses.PlayerSearchResponse
-import com.example.faceitstatchecker.ui.main.repositories.UserRepository
-import com.example.faceitstatchecker.ui.main.repositories.repository_interfaces.IUserRepository
+import com.example.faceitstatchecker.Network.repositories.UserRepository
+import com.example.faceitstatchecker.Network.repositories.repository_interfaces.IUserRepository
 
 private const val TAG = "MainViewModel"
 class MainViewModel : ViewModel() {
