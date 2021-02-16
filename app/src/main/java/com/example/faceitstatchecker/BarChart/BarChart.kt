@@ -21,13 +21,6 @@ class BarChart @JvmOverloads constructor(context: Context, attributeSet: Attribu
     private val painter = Paint()
     private val textBoundRect = Rect()
     private var orientation = Orientation.HORIZONTAL
-    private var graphData: List<GraphData>? = mutableListOf()
-
-    fun setGraphData(data: List<GraphData>){
-        graphData = data
-        this.invalidate()
-        this.requestLayout()
-    }
     fun setOrientation(orientation: Orientation){
         this.orientation = orientation
         this.invalidate()

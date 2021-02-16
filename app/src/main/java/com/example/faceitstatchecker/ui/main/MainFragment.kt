@@ -27,7 +27,6 @@ class MainFragment : Fragment() {
 
 	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 		super.onViewCreated(view, savedInstanceState)
-		viewModel.testSingleton()
 		val list = mutableListOf(BarChart.DummyData(150f, "ten"), BarChart.DummyData(240f, "twenty"), BarChart.DummyData(330f, "thirty"), BarChart.DummyData(450f, "fourty"), BarChart.DummyData(510f, "fifty"),
 			BarChart.DummyData(660f, "sixty"), BarChart.DummyData(702f, "seventy"))
 		testChart.setGraphData(list)
