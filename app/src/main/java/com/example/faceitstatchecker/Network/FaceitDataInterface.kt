@@ -9,6 +9,6 @@ import retrofit2.http.Query
  * Created by George Hart on 15/02/2021;
  */
 interface FaceitDataInterface {
-    @GET("/search/players")
+    @GET("search/players")
     fun playerSearch(@Query("nickname") playerName: String) : Call<PlayerSearchResponse>
 }
